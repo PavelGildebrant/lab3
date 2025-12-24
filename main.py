@@ -1,12 +1,11 @@
 # Файл: main.py
-# --- Финальная версия: Создаем и проверяем все 5 классов ---
-
-# 1. Импортируем ВСЕ 5 "чертежей" из папки 'models'
+# ---  Создаем и проверяем все 5 классов ---
+# 1. Импортируем ВСЕ 5 "моделей" из папки 'models'
+from models.discipline import Discipline
+from models.grading import Grading
 from models.group import Group
 from models.student import Student
 from models.teacher import Teacher
-from models.discipline import Discipline
-from models.grading import Grading
 
 # --- 2. Создание 5 экземпляров Групп ---
 print("--- 1. Создание 5 экземпляров Групп ---")
@@ -15,7 +14,6 @@ g2 = Group(group_name="ИБ-2", year=2024, direction="Инф. Без.")
 g3 = Group(group_name="ПИ-1", year=2023, direction="Прикл. Инф.")
 g4 = Group(group_name="ОЗИ-1", year=2022, direction="ОЗИ")
 g5 = Group(group_name="ГК-1", year=2021, direction="Геодезия")
-
 # --- Проверка методов Групп ---
 print("\n--- Проверка методов Групп ---")
 print(f"Объект g1: {g1.get_info()}")
@@ -42,7 +40,6 @@ print(f"Объект s4: {s4.get_info()}")
 print(f"Объект s5: {s5.get_info()}")
 
 
-# --- 4. Создание 5 экземпляров Преподавателей ---
 # --- 4. Создание 5 экземпляров Преподавателей ---
 print("\n--- 3. Создание 5 экземпляров Преподавателей ---")
 t1 = Teacher(fio="Петров Василий Сергеевич", degree="Кандидат технических наук", position="Доцент")
